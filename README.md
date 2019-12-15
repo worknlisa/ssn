@@ -1,2 +1,2 @@
 # SSN
-SSN Checker and Generator
+SSN Generator
