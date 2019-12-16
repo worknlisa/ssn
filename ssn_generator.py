@@ -8,41 +8,41 @@ def valid_ssn(ssn):
 	Checks to see if the input (ssn) matches criteria to be a valid SSN .    
 	'''
 
-    if type(ssn) != str:
-        return False
-    elif len(ssn) != 9:
-        return False
-    elif ssn[0] == '9':
-        return False
-    elif ssn[:3] == '666':
-        return False
-    elif ssn[:3] == '000':
-        return False
-    elif ssn[3:5] == '00':
-        return False
-    elif ssn[5:] == '0000':
-        return False
-    else:
-        return True
+	if type(ssn) != str:
+		return False
+	elif len(ssn) != 9:
+		return False
+	elif ssn[0] == '9':
+		return False
+	elif ssn[:3] == '666':
+		return False
+	elif ssn[:3] == '000':
+		return False
+	elif ssn[3:5] == '00':
+		return False
+	elif ssn[5:] == '0000':
+		return False
+	else:
+		return True
 
 
 def generate_ssn(event):
 	'''
 	Generates a string of nine random digits and checks to see if qualifies as a valid SSN.
 	'''
-    
-    generate = True
-    while generate:
-    
-        lista = [randint(0,9) for n in range(9)]
-        ssn = ''.join(map(str,lista))
-    
-        if valid_ssn(ssn):
-            generate = False
-            ssn = ssn[:3] + '-' + ssn[3:5] + '-' + ssn[5:]
-            output.config(text=ssn) # tkinter output 
-        else:
-            pass
+	
+	generate = True
+	while generate:
+	
+		lista = [randint(0,9) for n in range(9)]
+		ssn = ''.join(map(str,lista))
+	
+		if valid_ssn(ssn):
+			generate = False
+			ssn = ssn[:3] + '-' + ssn[3:5] + '-' + ssn[5:]
+			output.config(text=ssn) # tkinter output 
+		else:
+			pass
 
 # tkinter code
 
