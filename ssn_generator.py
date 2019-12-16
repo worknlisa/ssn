@@ -4,7 +4,10 @@ import tkinter as tk
 
 
 def valid_ssn(ssn):
-    
+	'''
+	Checks to see if the input (ssn) matches criteria to be a valid SSN .    
+	'''
+
     if type(ssn) != str:
         return False
     elif len(ssn) != 9:
@@ -24,6 +27,9 @@ def valid_ssn(ssn):
 
 
 def generate_ssn(event):
+	'''
+	Generates a string of nine random digits and checks to see if qualifies as a valid SSN.
+	'''
     
     generate = True
     while generate:
@@ -34,10 +40,11 @@ def generate_ssn(event):
         if valid_ssn(ssn):
             generate = False
             ssn = ssn[:3] + '-' + ssn[3:5] + '-' + ssn[5:]
-            output.config(text=ssn)
+            output.config(text=ssn) # tkinter output 
         else:
             pass
 
+# tkinter code
 
 win = tk.Tk()
 win.title('ssn g3n3r4t0r!!!')
@@ -52,6 +59,7 @@ output.place(relx=0.5, rely=.65, anchor=tk.CENTER)
 
 
 # Centering window
+
 w = 200
 h = 100
 
