@@ -9,5 +9,7 @@ A GUI SSN Generator built using Python and tkinter to demonstrate the SSN number
 
 ### Resources
 
+[SSA Fact Sheet](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
+
 [Centering Tkinter Window](https://stackoverflow.com/questions/14910858/how-to-specify-where-a-tkinter-window-opens/14912644#14912644)
 
