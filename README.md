@@ -1,6 +1,6 @@
 # SSN Generator
 
-**:bangbang: :warning: FOR DEMONSTRATION PURPOSES ONLY! :warning: :bangbang:**
+**:bangbang: This is nothing more than a glorified random number generator. **
 
 A GUI SSN Generator built using Python and tkinter to illustrate the SSN numbering scheme. At the time of writing, [~453 million SSNs have been issued.](https://www.ssa.gov/history/hfaq.html) With approximately 1 billion SSNs possible, there is **almost** a 1 in 2 chance of guessing a previously issued SSN!
 
